@@ -39,7 +39,7 @@ void TestSortAlgorithmSmall(SortAlgorithm sort_algorithm)
 {
     const int N = 20;
     for (int bitmap = 0; bitmap < (1 << N); ++bitmap) {
-        std::vector<Integer> vector(N, 1);
+        std::vector<Integer> vector(N, 0);
         for (int i = 0; i < N; ++i) {
             if (bitmap & (1 << i)) {
                 vector[i] = 1;
